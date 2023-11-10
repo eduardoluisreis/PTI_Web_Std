@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: disc;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+div img {
+    display: block;
+    width: 100%;
+}
+
+
+.flex-container {
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 200%;
+}
+
+header {
+    background-color: #04ab9d;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+}
+
+header .menu .list-itens {
+    display: flex;
+    max-width: 450px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list-itens li a {
+    color: rgb(255, 255, 255);
+}
+
+header .menu {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.home {
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .texto-home {
+    min-height: 200px;
+
+}
+
+.texto-home h1 {
+    color: #122A57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #122A57;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    border-radius: 30px;
+    width: 190px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#quem-somos {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quem-somos h2 {
+    font-size: 32px;
+    color: #122A57;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#quem-somos h2::before {
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #122A57;
+    position: relative;
+}
+
+.f-container-quem-somos p {
+    background:url("images/travel_agent.jpg");
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.f-container-quem-somos img {
+    background-color: blue;
+    min-width: 20px;
+}
+
+.f-container-servicos {
+    height: 100vh;
+    background-color: #122A57;
+
+    height: 460px;
+}
+
+.servicos {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+
+#servicos h2 {
+    color: #fff;
+    font: size 32px;
+    margin-bottom: 20px;
+}
+
+.list-servicos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-servicos .item-servico {
+    text-align: center;
+}
+
+.item-servico a {
+    width: 220px;
+    height: 5000px;
+    border-radius: 50px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 50px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #122A57;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.item-servico p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+
+}
+
+.item-servico img {
+    width: 80%;
+    margin: auto;
+}
+
+.fc-saibamais{
+    height: 100vh;
+    align-items: center;
+}
+
+.fc-saibamais .saibamais{
+    background-color: #04ab9d;
+}
+
+.planos {
+    flex-direction: column-reverse;
+    min-height: 50vh;
+}
+
+.list-planos {
+    display: flex;
+    align-items: flex-end;
+}
+
+.item-plano {
+    flex: 1;
+    border: 2px solid #122A57;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.item-plano .btn {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.item-plano h3 {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item-plano h3::after {
+    content: "";
+    background-color: #122A57;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item-plano ul {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-plano ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-plano ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122A57;
+    margin-right: 5px;
+}
+
+/* footer ul.social li img {
+    max-width: 1.40rem;
+    
+  } */
+
+/* Estilo geral do formulário */
+  #contactForm {
+    max-width: 600px;
+    margin: auto;
+    border: solid 1px black;
+}
+
+/* Estilo para os campos de entrada */
+.form-floating {
+    margin-bottom: 15px;
+}
+
+/* Estilo para o botão de envio */
+#submitButton {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para o botão de envio quando estiver desativado */
+#submitButton:disabled {
+    background-color: #ccc; /* Cor de fundo cinza para indicar que está desativado */
+    cursor: not-allowed;
+}
+
+/* Estilo para a mensagem de feedback inválida */
+.invalid-feedback {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Adicionando estilos específicos para telas menores (opcional) */
+@media screen and (max-width: 600px) {
+    #contactForm {
+        width: 80%;
+    }
+}
