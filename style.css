@@ -6,7 +6,7 @@
 }
 
 ul {
-    list-style: disc;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -34,10 +34,13 @@ header {
     height: 50px;
     display: flex;
     position: fixed;
-    justify-content: space-between;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: space-evenly;
     align-items: center;
     color: #fff;
-
 }
 
 header .menu .list-itens {
@@ -57,10 +60,10 @@ header .menu {
     align-items: flex-end;
 }
 
-.home {
-    height: 100vh;
+#home {
+    height: 110vh;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
 
 .home .texto-home {
@@ -90,10 +93,13 @@ header .menu {
 }
 
 #quem-somos {
+    display: flex;
+    height: 97vh;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
-}
+    /* justify-content: space-between; */
+    
+    }    
 
 #quem-somos h2 {
     font-size: 32px;
@@ -111,15 +117,15 @@ header .menu {
     position: relative;
 }
 
-.f-container-quem-somos p {
+#quem-somos p {
     background:url("images/travel_agent.jpg");
     margin-bottom: 10px;
-    width: 90%;
+    width: 100%;
 }
 
-.f-container-quem-somos img {
+#quem-somos img {
     background-color: blue;
-    min-width: 20px;
+    max-width: 50rem;
 }
 
 .f-container-servicos {
