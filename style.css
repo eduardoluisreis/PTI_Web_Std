@@ -185,7 +185,7 @@ header .menu {
     margin: auto;
 }
 
-.fc-saibamais{
+#saibamais{
     height: 100vh;
     align-items: center;
 }
@@ -263,17 +263,12 @@ header .menu {
 }
 
 .form-image {
-    width: 50%;
+    max-width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #fde3a7d7;
     padding: 1rem;
 }
 
-.form-image img {
-    width: 31rem;
-}
 
 .form {
     width: 50%;
@@ -363,6 +358,22 @@ header .menu {
     font-weight: 500;
     color: #fff;
 }
+
+#social{
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icones .medias{
+    width: 1rem;    
+    background-color: #056b63;
+    align-items: end;    
+}
+
+
+
+
+
 
 @media screen and (max-width: 1330px) {
     .form-image {
