@@ -165,18 +165,19 @@ header .menu {
     height: 100vh;    
 }
 
-.list-servicos item-servico {
+.list-servicos .item-servico {
     text-align: center;
+    height: 200px;
+     width: 220px;
     border: solid 2px magenta;
 }
 
 .item-servico a {
-    width: 220px;
-    height: 5000px;
+   
     border-radius: 50px;
     background-color: #fff;
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     line-height: 50px;
     padding: 5px 10px;
     text-decoration: none;
@@ -187,7 +188,7 @@ header .menu {
 
 .item-servico p {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 25px;
     color: #fff;
     margin-top: 20px;
 }
