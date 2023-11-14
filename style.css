@@ -1,38 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
+
+body, h1, h2, h3, p, ul, li {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
-ul {
-    list-style: none;
+    font-family: 'Kay Pho Du','Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-ul li a {
-    text-decoration: none;
-}
-
-div img {
-    display: block;
-    width: 100%;
-}
-
-
-.flex-container-home {
-    display: flex;
-    max-width: 992px;
-    margin: auto;
-    width: 100%;  
-    border: solid 2px rgb(242, 255, 0);
-}
-
-.text-menu h1{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+body {
+    font-family: ;}
+    
+    div img {
+        display: block;
+        width: 100%;
+    }
+    .flex-container {
+        display: flex;
+        max-width: 992px;
+        margin: auto;
+        width: 100%;  
+        border: solid 1px red;
+    }
+    
+    .text-menu h1{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
     font-family: 'Kay Pho Du', serif;
     font-weight: 700;
     font-size: 2em;
@@ -53,7 +45,7 @@ header {
     color: #fff;
 }
 
-.flex-container-menu .menu .list-itens {
+header .menu .list-itens {
     display: flex;
     align-items: end;
     max-width: 450px;
@@ -143,20 +135,13 @@ header .menu {
 .f-container-servicos {
     background-color: #122A57;
     height: 460px;
-    margin-top:120px;
-    border: solid 2px green;
-    
-    justify-content: center;
-    max-width: 1350px;
-    /* margin: auto; */
-    width: 100%;  
+    margin-top:10px;
 }
 
 #servicos h2 {
     color: #fff;
     font: size 32px;
     margin-bottom: 90px;
-    height: 10px;
 }
 
 .list-servicos {
@@ -167,17 +152,15 @@ header .menu {
 
 .list-servicos .item-servico {
     text-align: center;
-    height: 200px;
-     width: 220px;
-    border: solid 2px magenta;
 }
 
 .item-servico a {
-   
+    width: 220px;
+    height: 5000px;
     border-radius: 50px;
     background-color: #fff;
     text-align: center;
-    /* margin-top: 20px; */
+    margin-top: 20px;
     line-height: 50px;
     padding: 5px 10px;
     text-decoration: none;
@@ -188,9 +171,10 @@ header .menu {
 
 .item-servico p {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 18px;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 20px;z
+
 }
 
 .item-servico img {
@@ -208,17 +192,10 @@ header .menu {
     background-color: #04ab9d;
 }
 
-.flex-container-planos {
-    display: flex;
-    max-width: 992px;
-    margin: auto;
-    width: 100%;  
-    border: solid 2px red;
-}
-
-.planos {
+.fc-planos {
     flex-direction: column-reverse;
     min-height: 50vh;
+    border: solid 1px rgb(255, 0, 234);
 }
 
 .list-planos {
