@@ -195,6 +195,7 @@ header .menu {
 .list-planos {
     display: flex;
     align-items: flex-end;
+    padding: 5p;
 }
 
 .item-plano {
@@ -245,6 +246,25 @@ header .menu {
     background-color: #122A57;
     margin-right: 5px;
 }
+
+.saiba_planos {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* Estilos adicionais conforme necessário */
+  .saiba_planos h3 {
+    color: #333;
+    border-bottom: 0px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .saiba_planos p {
+    margin-bottom: 10px;
+  }
 
 /* footer ul.social li img {
     max-width: 1.40rem;
