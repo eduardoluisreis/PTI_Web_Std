@@ -20,6 +20,7 @@ div img {
 }
 
 
+
 .flex-container {
     display: flex;
     max-width: 992px;
@@ -308,9 +309,10 @@ header .menu {
     margin-top: 5px;
 }
 
-/* Adicionando estilos específicos para telas menores (opcional) */
+/*Adicionando estilos específicos para telas menores (opcional)*/
 @media screen and (max-width: 600px) {
     #contactForm {
-        width: 80%;
-    }
+        width: 80%; }
 }
+
+
