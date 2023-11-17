@@ -136,14 +136,24 @@ header .menu {
 #servicos {
     background-color: #122A57;
     height: 100vh;
-    width: auto;
     border: solid 2px rgb(246, 255, 0);
+    margin: 0;
+    padding: 0;
+}
+
+.texto-servico{
+    color: #fff;
+    display: flex;
+    align-items: end;
+    margin-right: 100px;
+    padding-right: ;
 }
 
 #servicos h2 {
     display: flex;
     font-size: 2rem;
     color: #ffffff;
+    margin-top: -120px;
     margin-bottom: 0.625rem;
     margin-left: 20px;
 }
@@ -159,11 +169,12 @@ header .menu {
 
 #servicos .list-servicos {
     display: flex;
-    justify-content: space-between;
-    width: 80vw;
+    justify-content: space-around;
+    width: 100vw;
     height: 45vh;   
-    padding-top: 100px;
+    padding-top: 200px;
     padding-right: 150px;
+    /* border: solid 2px blue; */
 }
 
 /* .list-servicos .item-servico {
@@ -199,36 +210,45 @@ header .menu {
 }
 
 /* ##################### */
-#saibamais{
+#saiba-mais{
     height: 100vh;
     align-items: center;
+    color: #04ab9d;
+    border: dotted 2px yellow;
 }
 
-.flex-container saibamais{
-    background-color: #04ab9d;
+#saiba-mais h2{
+    color: red;
+
+}
+
+
+.texto-saibamais{
+    color: darkgoldenrod;
 }
 
 #planos {
-    display: flex;
-    flex-direction: column-reverse;
-    min-height: 50vh;
+    height: 100vh;
     border: solid 1px rgb(255, 0, 234);
 }
 
-#planos {
+
+.list-planos{
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* width: 40px; */
+    height:40vh;
+    border: dashed 2px rgb(248, 139, 4);
 }
 
-
-
-#planos .item-plano {
+.item-plano {
     display: flex;
     justify-content: flex-start;
-    flex: 3;
-    border: 2px solid #122A57;
+    border: 2px solid rgb(61, 255, 8);
     margin-right: 20px;
     padding: 10px;
+    
 }
 
 .item-plano .btn {
@@ -237,21 +257,21 @@ header .menu {
 }
 
 #planos h3 {
-    font-size: 24px;
     display: flex;
-    flex-direction: column;
+    font-size: 2rem;
+    /* flex-direction: column;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px; */
 }
 
-.item-plano h3::after {
+/* #planos  h3::before {
     content: "";
     background-color: #122A57;
     width: 100%;
     height: 3px;
     margin-top: 20px;
     margin-bottom: 10px;
-}
+} */
 
 .item-plano ul {
     padding: 10px 20px;
@@ -273,7 +293,10 @@ header .menu {
     margin-right: 5px;
 }
 
-
+#planos img {
+    display: flex;
+    align-items: flex-start;
+}
 .form-image {
     max-width: 50%;
     display: flex;
