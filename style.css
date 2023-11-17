@@ -103,6 +103,7 @@ header .menu {
     height: 100vh;
     flex-direction: row-reverse;
     align-items: center;
+   
     }    
 
 #quem-somos h2 {
@@ -132,27 +133,42 @@ header .menu {
 
 /* ##################### */
 
-.f-container-servicos {
+#servicos {
     background-color: #122A57;
-    height: 460px;
-    margin-top:10px;
+    height: 100vh;
+    width: auto;
+    border: solid 2px rgb(246, 255, 0);
 }
 
 #servicos h2 {
-    color: #fff;
-    font: size 32px;
-    margin-bottom: 90px;
-}
-
-.list-servicos {
     display: flex;
-    justify-content: space-around;
-    height: 100vh;    
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 0.625rem;
+    margin-left: 20px;
 }
 
-.list-servicos .item-servico {
-    text-align: center;
+#servicos h2::before {
+    content: "";
+    height: 50px;
+    width: 2px;
+    margin-right: 5px;
+    background-color: #ffffff;
+    position: relative;
 }
+
+#servicos .list-servicos {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    height: 45vh;   
+    padding-top: 100px;
+    padding-right: 150px;
+}
+
+/* .list-servicos .item-servico {
+    text-align: center;
+} */
 
 .item-servico a {
     width: 220px;
@@ -173,12 +189,12 @@ header .menu {
     font-weight: 700;
     font-size: 18px;
     color: #fff;
-    margin-top: 20px;z
+    margin-top: 20px;
 
 }
 
 .item-servico img {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -188,23 +204,28 @@ header .menu {
     align-items: center;
 }
 
-.fc-saibamais .saibamais{
+.flex-container saibamais{
     background-color: #04ab9d;
 }
 
-.fc-planos {
+#planos {
+    display: flex;
     flex-direction: column-reverse;
     min-height: 50vh;
     border: solid 1px rgb(255, 0, 234);
 }
 
-.list-planos {
+#planos {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
-.item-plano {
-    flex: 1;
+
+
+#planos .item-plano {
+    display: flex;
+    justify-content: flex-start;
+    flex: 3;
     border: 2px solid #122A57;
     margin-right: 20px;
     padding: 10px;
@@ -215,7 +236,7 @@ header .menu {
     margin-bottom: 20px;
 }
 
-.item-plano h3 {
+#planos h3 {
     font-size: 24px;
     display: flex;
     flex-direction: column;
@@ -252,14 +273,6 @@ header .menu {
     margin-right: 5px;
 }
 
-
-
-.container {
-    width: 80%;
-    height: 80vh;
-    display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
-}
 
 .form-image {
     max-width: 50%;
