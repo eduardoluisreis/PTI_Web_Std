@@ -55,6 +55,7 @@ header .list-items {
     align-items: center;
 
 }
+
 header .menu {
     justify-content: space-around;
 }
@@ -186,20 +187,32 @@ header .menu {
 
 /* ##################### */
 #saiba-mais {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
     height: 100vh;
     align-items: center;
     color: #04ab9d;
     border: dotted 2px yellow;
 }
 
-#saiba-mais h2 {
-    color: red;
-
+#saiba-mais .titulo {
+    color: rgb(0, 183, 255);
 }
 
 
 .texto-saibamais {
-    color: darkgoldenrod;
+    color: black;
+    width: 90%;
+}
+
+#saiba-mais .texto-saibamais {
+    margin-bottom: 0.500rem;
+    width: 70%;
+}
+
+#saiba-mais img {
+    max-width: 60rem;
 }
 
 #planos {
@@ -369,16 +382,33 @@ header .menu {
 #social {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    background-color: #abbab8;
 }
 
-.social-icones .medias {
-    width: 1rem;
-    background-color: #056b63;
-    align-items: end;
+#social ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    list-style-type: none;
+    width: 5rem;
+    height: 3rem;
 }
 
+#social .medias {
+    /* border: solid 2px greenyellow; */
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+}
 
-
+#social ul.social li:hover {
+    transition: 0.3s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
 
 
 
@@ -427,7 +457,7 @@ header .menu {
         margin-bottom: 20px;
     }
 
-    #saiba-mais{
+    #saiba-mais {
         max-width: 100%;
         /* width: 100%; */
     }
