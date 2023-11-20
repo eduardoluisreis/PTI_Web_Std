@@ -20,7 +20,7 @@ div img {
     margin: auto;
     width: 100%;
     min-width: 320px;
-    border: solid 2px red;
+    /* border: solid 2px red; */
 }
 
 .text-menu h1 {
@@ -193,7 +193,7 @@ header .menu {
     height: 100vh;
     align-items: center;
     color: #04ab9d;
-    border: dotted 2px yellow;
+    /* border: dotted 2px yellow; */
 }
 
 #saiba-mais .titulo {
@@ -383,7 +383,7 @@ header .menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #abbab8;
+    background-color: #ffffff;
 }
 
 #social ul {
