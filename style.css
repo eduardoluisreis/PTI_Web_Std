@@ -1,17 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-
-ul {
-    list-style: disc;
+body, h1, h2, h3, p, ul, li {
+    box-sizing: border-box;
+    font-family: 'Kay Pho Du', 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-ul li a {
-    text-decoration: none;
+body {
+    font-family: ;
 }
 
 div img {
@@ -20,57 +15,85 @@ div img {
 }
 
 
-
 .flex-container {
     display: flex;
     max-width: 992px;
     margin: auto;
-    width: 200%;
+    width: 100%;
+    min-width: 320px;
+}
+
+.text-menu h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-weight: 700;
+    font-size: 2em;
 }
 
 header {
+    display: flex;
     background-color: #04ab9d;
     width: 100%;
     height: 50px;
-    display: flex;
     position: fixed;
-    justify-content: space-between;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: space-evenly;
     align-items: center;
     color: #fff;
-
 }
 
-header .menu .list-itens {
+header .list-items {
     display: flex;
-    max-width: 450px;
+    max-width: 560px;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-}
-
-.list-itens li a {
-    color: rgb(255, 255, 255);
 }
 
 header .menu {
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-around;
 }
 
-.home {
-    height: 100vh;
+.list-items li {
+    list-style-type: none;
+}
+
+.list-items li a {
+    color: #fff;
+    font-weight: 700;
+}
+
+.list-items li:hover {
+    transition: 0.3s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.list-items li a:hover {
+    color: #04d5ff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 0, 9em;
+}
+
+#home {
+    height: 110vh;
     align-items: center;
     justify-content: space-between;
 }
 
 .home .texto-home {
     min-height: 200px;
-
 }
 
-.texto-home h1 {
+.texto-home h2 {
+    font-size: 2rem;
     color: #122A57;
-    font-size: 48px;
     margin-bottom: 10px;
 }
 
@@ -89,62 +112,59 @@ header .menu {
     margin-bottom: 10px;
 }
 
+.btn:hover{
+    transition: 0.3s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
 #quem-somos {
+    display: flex;
+    height: 100vh;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+
 }
 
 #quem-somos h2 {
-    font-size: 32px;
-    color: #122A57;
     display: flex;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #122A57;
+    margin-bottom: 0.625rem;
 }
 
-#quem-somos h2::before {
-    content: "";
-    height: 50px;
-    width: 5px;
-    margin-right: 5px;
+#quem-somos p {
+    margin-bottom: 0.500rem;
+    width: 100%;
+}
+
+#quem-somos img {
+    max-width: 80rem;
+}
+
+.container-externo {
     background-color: #122A57;
-    position: relative;
+    width: 100%;
 }
 
-.f-container-quem-somos p {
-    background:url("images/travel_agent.jpg");
-    margin-bottom: 10px;
-    width: 90%;
-}
-
-.f-container-quem-somos img {
-    background-color: blue;
-    min-width: 20px;
-}
-
-.f-container-servicos {
+#servicos {
     height: 100vh;
-    background-color: #122A57;
-
-    height: 460px;
-}
-
-.servicos {
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 100px;
-
 }
 
 #servicos h2 {
     color: #fff;
-    font: size 32px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .list-servicos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 80px;
 }
 
 .list-servicos .item-servico {
@@ -153,25 +173,29 @@ header .menu {
 
 .item-servico a {
     width: 220px;
-    height: 5000px;
-    border-radius: 50px;
+    height: 50px;
     background-color: #fff;
-    text-align: center;
+    border-radius: 30px;
     margin-top: 20px;
-    line-height: 50px;
     padding: 5px 10px;
-    text-decoration: none;
-    color: #122A57;
+    line-height: 50px;
+    text-align: center;
     font-size: 12px;
     font-weight: 700;
+    color: #122A57;
+    text-decoration: none;
 }
+
+.list-servicos .item-servico a:hover{
+    background-color: #05ddfa;
+}
+
 
 .item-servico p {
     font-weight: 700;
     font-size: 18px;
     color: #fff;
     margin-top: 20px;
-
 }
 
 .item-servico img {
@@ -179,31 +203,61 @@ header .menu {
     margin: auto;
 }
 
-.fc-saibamais{
+#saiba-mais {
+    display: flex;
+    flex-direction: row;
     height: 100vh;
     align-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
-.fc-saibamais .saibamais{
-    background-color: #04ab9d;
+#saiba-mais .titulo {
+    font-size: 2rem;
+    color: #122A57;
 }
 
-.planos {
-    flex-direction: column-reverse;
-    min-height: 50vh;
+
+.texto-saibamais {
+    color: black;
+    width: 90%;
+}
+
+#saiba-mais .texto-saibamais {
+    margin-bottom: 0.500rem;
+    width: 70%;
+}
+
+#saiba-mais img {
+    max-width: 60rem;
+}
+
+#planos {
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+#planos h2 {
+    font-size: 2rem;
+    color: #122A57;
 }
 
 .list-planos {
     display: flex;
     align-items: flex-end;
-    padding: 5p;
+
+    justify-content: space-between;
+    padding-top: 50px;
+
 }
 
 .item-plano {
     flex: 1;
-    border: 2px solid #122A57;
+    border: 5px solid #122A57;
     margin-right: 20px;
     padding: 10px;
+    max-width: 240px;
 }
 
 .item-plano .btn {
@@ -219,19 +273,11 @@ header .menu {
     margin-top: 20px;
 }
 
-.item-plano h3::after {
-    content: "";
-    background-color: #122A57;
-    width: 100%;
-    height: 3px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
 .item-plano ul {
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .item-plano ul li {
@@ -240,79 +286,243 @@ header .menu {
     align-items: center;
 }
 
-.item-plano ul li::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: #122A57;
-    margin-right: 5px;
+.form {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #eff1f6;
+    padding: 3rem;
 }
 
-.saiba_planos {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 20px;
-    text-align: justify;
-  }
-  
-  /* Estilos adicionais conforme necessário */
-  .saiba_planos h3 {
-    color: #333;
-    border-bottom: 0px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .saiba_planos p {
-    margin-bottom: 10px;
-  }
 
-/* footer ul.social li img {
-    max-width: 1.40rem;
-    
-  } */
-
-/* Estilo geral do formulário */
-  #contactForm {
-    max-width: 600px;
-    margin: auto;
-    border: solid 1px black;
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Estilo para os campos de entrada */
-.form-floating {
-    margin-bottom: 15px;
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    /* width:300px; */
 }
 
-/* Estilo para o botão de envio */
-#submitButton {
-    display: block;
-    width: 30%;
-    padding: 10px;
-    background-color: #007bff; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branco */
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    /* width: 200px; */
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
     border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    background-color: rgba(103, 130, 133, 0.393);
+    text-transform: lowercase;
+}
+
+.input-box input:hover {
+    background-color: #80e0fdab;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #e60505;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #4fbfb272;
+    padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/* Estilo para o botão de envio quando estiver desativado */
-#submitButton:disabled {
-    background-color: #ccc; /* Cor de fundo cinza para indicar que está desativado */
-    cursor: not-allowed;
+.continue-button button:hover {
+    background-color: #0afde9;
 }
 
-/* Estilo para a mensagem de feedback inválida */
-.invalid-feedback {
-    color: red;
-    font-size: 0.9em;
-    margin-top: 5px;
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #030000d2;
 }
 
-/*Adicionando estilos específicos para telas menores (opcional)*/
-@media screen and (max-width: 600px) {
-    #contactForm {
-        width: 80%; }
+#contato img {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
 }
 
+#contato h2{
+    font-size: 2rem;
+    color: #122A57;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #e8e7e7;
+}
+
+#social ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    list-style-type: none;
+    width: 5rem;
+    height: 3rem;
+}
+
+#social .medias {
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+}
+
+#social ul.social li:hover {
+    transition: 0.3s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#footer {
+    font-family: 'Kay Pho Du';
+    font-weight: 500;
+    font-size: .8em;
+    background-color: rgba(229, 247, 247, 0.459)
+}
+
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .flex-container {
+        max-width: 768px;
+    }
+
+    .list-items {
+        max-width: 480px;
+    }
+
+    #home {
+        height: auto;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    #quem-somos img {
+        max-width: 100%;
+    }
+
+    .list-servicos .item-servico img {
+        width: 70%;
+        margin: auto;
+    }
+
+    #planos .item-plano {
+        max-width: 100%;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .list-items {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    header .list-items {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .menu {
+        margin-top: 10px;
+    }
+
+    #home {
+        height: auto;
+    }
+
+    .home .texto-home {
+        width: 100%;
+    }
+
+    #quem-somos {
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos img {
+        min-width: 100%;
+        margin: auto;
+    }
+
+    .list-servicos {
+        flex-direction: column;
+    }
+
+    .item-servico img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .list-planos {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .list-planos .item-plano {
+        max-width: 100%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #saiba-mais {
+        max-width: 100%;
+    }
+
+    #saiba-mais .texto-saibamais {
+        width: 100%;
+    }
+
+    #saiba-mais img {
+        max-width: 100%;
+    }
+}
 

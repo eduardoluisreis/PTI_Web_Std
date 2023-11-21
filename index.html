@@ -2,47 +2,56 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FR Turismos</title>
-	<link rel="stylesheet" href="./style.css" />
+	<link rel="shortcut icon" href="images/favicon-32x32.png">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 	<header>
 		<div class="flex-container menu">
-			<h1>FRTurismos</h1>
-			
-			<ul class="list-itens">
+
+			<div>
+				<h1>FR Turismos</h1>
+			</div>
+			<ul class="list-items">
+
 				<li><a href="#home">Home</a></li>
 				<li><a href="#quem-somos">Quem Somos</a></li>
 				<li><a href="#servicos">Serviços</a></li>
 				<li><a href="#planos">Planos</a></li>
 				<li><a href="#saiba-mais">Saiba Mais</a></li>
-				<!-- <li><a href="#contactForm">Contato</a></li> -->
+				<li><a href="#contato">Contato</a></li>
 			</ul>
 		</div>
 	</header>
 
 
 	<div class="flex-container home" id="home">
-		<div class="div-header">
-			<h1>FR <br />Turismos</h1>
+
+		<div class="texto-home">
+			<h2>FR <br />Turismos</h2>
+
 			<p>O melhor serviço para você!</p>
 			<a href="#saiba-mais" class="btn">Saiba Mais!</a>
 		</div>
 
 		<div>
 			<div class="banner">
-				<img src="./images/viagens.jpg" alt="banner de apresentação" />
+				<img src="./images/viagens.jpg" alt="banner de apresentação">
 			</div>
 		</div>
 	</div>
 
 
 
-	<div class="f-container-quem-somos" id="quem-somos">
+	<div class="flex-container quem-somos" id="quem-somos">
 		<div>
 			<h2 class="div-header">Quem somos</h2>
 			<p><strong> Conectando Você ao Mundo com Paixão e Expertise</strong></p>
@@ -77,38 +86,40 @@
 				para fazer parte dela, proporcionando uma experiência de viagem que vai além das expectativas.</p>
 			</p>
 		</div>
-
 		<div>
-			<img src="./images//travel_agent.jpg" alt="pessoas segurando um aviao, prancheta e malas" />
+			<img src="./images//travel_agent.jpg" alt="pessoas segurando um aviao, prancheta e malas">
 		</div>
 	</div>
 
 
 
-	<div class="f-container-servicos">
+	<div class="container-externo">
 		<div class="flex-container" id="servicos">
-			<h2 class="servicos">Serviços</h2>
-		</div>
-
-		<div class="list-servicos">
-			<div class="item-servico">
-				<div><img src="./images/icon-2.png" alt="hospedagens" /></div>
-				<p>Hospedagens</p>
-				<a href="#">Comprar Agora</a>
-			</div>
-
-			<div class="item-servico">
-				<div><img src="./images/icon-1.png" alt="pacote de viagens" /></div>
-				<p>Pacotes de viagens</p>
-				<a href="#">Comprar Agora</a>
-			</div>
 
 			<div>
+				<h2>Serviços</h2>
+
+			</div>
+
+			<div class="list-servicos">
 				<div class="item-servico">
-					<div><img src="./images/icon-3.png" alt="roteiros personalizados" /></div>
-					<p>Roteiros personalizados</p>
-					<a href="#">Comprar Agora</a>
+					<div><img src="./images/icon-2.png" alt="hospedagens"></div>
+					<p>Hospedagens</p>
+					<a href="#contato">Comprar Agora</a>
 				</div>
+
+				<div class="item-servico">
+					<div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
+					<p>Pacotes de viagens</p>
+					<a href="#contato">Comprar Agora</a>
+				</div>
+
+				<div class="item-servico">
+					<div><img src="./images/icon-3.png" alt="roteiros personalizados"></div>
+					<p>Roteiros personalizados</p>
+					<a href="#contato">Comprar Agora</a>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -116,14 +127,14 @@
 
 
 	<div class="flex-container" id="planos">
+
 		<div>
 			<h2 class="div-header">Planos</h2>
 		</div>
 
 		<div class="list-planos">
-
 			<div class="item-plano">
-				<h3>Plano Essencial</h3>
+				<h2>Plano 1</h2>
 				<ul>
 					<li>Suporte 24h</li>
 					<li>Serviços de quarto</li>
@@ -133,7 +144,8 @@
 			</div>
 
 			<div class="item-plano">
-				<h3>Plano Pro</h3>
+				<h3>Plano 2</h3>
+				<br>
 				<ul>
 					<li>Suporte 24h</li>
 					<li>Serviços de quarto</li>
@@ -144,7 +156,8 @@
 			</div>
 
 			<div class="item-plano">
-				<h3>Plano Master</h3>
+				<h2>Plano 3</h2>
+				<br>
 				<ul>
 					<li>Suporte 24h</li>
 					<li>Serviços de quarto</li>
@@ -158,69 +171,159 @@
 		</div>
 	</div>
 
+	<div class="flex-container saibamais" id="saiba-mais">
+		<div>
+			<h2 class="titulo">Saiba Mais</h2>
 
-	<div class="fc-saibamais" id="saiba-mais">
-		<div class="saibamais">
-			<h2 class="div-header">Saiba Mais</h2>
-		</div>	
-			<div class="saiba_planos">
-				<h3>Descubra Nossos Planos: Escolha a Experiência que Combina com Você!</h3>
-				<p>Na <strong>FR Turismos</strong>, entendemos que cada viajante é único, e é por isso que oferecemos três opções de planos cuidadosamente elaborados para atender às suas expectativas. Escolha entre nossos planos Essencial, Pro e Master e descubra a jornada perfeita para você.</p>
-				<h3>Plano Essencial: Para Quem Valoriza o Básico com Conforto</h3>
-				<p>Ideal para quem busca uma experiência descomplicada, o Plano Essencial oferece os elementos essenciais para uma viagem memorável. Desfrute de acomodações confortáveis, transporte confiável e a atenção personalizada de nossos agentes, garantindo que cada momento da sua jornada seja tranquilo.</p>
-				<h3>Plano Pro: Para Viajantes Exigentes em Busca de Mais</h3>
-				<p>O Plano Pro é projetado para viajantes que buscam um toque extra de luxo e exclusividade. Com upgrades cuidadosamente selecionados, experiências gastronômicas especiais e itinerários personalizados, este plano eleva sua aventura a um novo patamar, proporcionando uma experiência de viagem verdadeiramente única.</p>
-				<h3>Plano Master: Para os Exploradores que Buscam o Máximo em Luxo e Exclusividade</h3>
-				<p>O Plano Master é a escolha para os viajantes que desejam a epitome do luxo e da exclusividade. Com acomodações de prestígio, acesso à experiências VIP e um serviço altamente personalizado, este plano é para aqueles que buscam uma jornada extraordinária, onde cada detalhe é cuidadosamente planejado para superar as expectativas.</p> 
-				<p>Explore cada plano em detalhes abaixo e descubra qual se alinha melhor com seus desejos de viagem. Estamos ansiosos para criar uma experiência única e inesquecível para você. Clique em "Saiba Mais" e comece sua jornada com a <strong>FR Turismos</strong>.</p>
+
+			<div>
+				<p class="texto-saibamais">
+					<!-- **Descubra Nossos Planos: Escolha a Experiência que Combina com Você!** <br><br> -->
+
+					Para a <strong>FR Turismos</strong>,cada viajante é único, por isso oferecemos três opções de planos
+					cuidadosamente elaborados para atender às suas expectativas.<br><br>
+
+					<strong>**Plano Essencial: Para Quem Valoriza o Básico com Conforto**</strong><br>
+
+					Para quem busca uma experiência descomplicada, o Plano Essencial oferece os elementos
+					essenciais para uma viagem memorável.Acomodações confortáveis, transporte confiável e a atenção
+					personalizada de nossos agentes, garantindo que cada momento da sua jornada seja tranquilo.<br><br>
+
+					<strong>**Plano Pro: Para Viajantes Exigentes em Busca de Mais**</strong><br>
+
+					Projetado com um toque extra de luxo e exclusividade.Upgrades cuidadosamente selecionados,
+					experiências gastronômicas especiais e itinerários personalizados, este plano eleva sua aventura a
+					um novo patamar, proporcionando uma experiência de viagem verdadeiramente única. <br><br>
+
+					<strong>**Plano Master: Para Exploradores que Buscam o Máximo em Luxo e Exclusividade**</strong><br>
+
+					O Plano Master é a escolha para os viajantes que desejam a epitome do luxo e da
+					exclusividade.Acomodações de prestígio, acesso à experiências VIP e um serviço altamente
+					personalizado, este plano é para aqueles que buscam uma jornada extraordinária, onde tudo é
+					cuidadosamente planejado.
+					para superar as expectativas.<br><br>
+
+					Venha nos conhecer. Clique em <a href="#contato">Contato</a> e
+					comece sua jornada com a <strong>FR Turismos</strong>.
+				</p>
 			</div>
+		</div>
+		<div>
+			<img src="./images/saibamais.jpg"
+				alt="garota de cabelos cacheados, pela branca, vestindo calça jeans e blusa cor mostarda, com dois colares em volta do pescoço, apontado para texto com os dois dedos indicadores">
+
 		</div>
 	</div>
 
 
 
-	<form id="contactForm">
-		<!-- Name input-->
-		<div class="form-floating mb-4">
-			<input class="form-control" id="name" type="text" placeholder="Nome Completo."
-				data-sb-validations="required" data-sb-can-submit="yes">
-			<div class="invalid-feedback d-none" data-sb-feedback="name:required"></div>
+
+
+
+	<!-- formulario de contato -->
+	<div class="flex-container formulario" id="contato">
+
+		<div class="form">
+			<form action="#">
+				<div class="form-header">
+					<div class="title">
+						<h2>Fale conosco.</h2>
+					</div>
+				</div>
+
+				<div class="input-group">
+					<div class="input-box">
+						<label for="firstname"> Nome completo</label>
+						<input id="firstname" type="text" name="firstname" placeholder="Digite seu  nome"
+							required>
+					</div>
+
+					<div class="input-box">
+						<label for="email">E-mail</label>
+						<input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+					</div>
+
+					<div class="input-box">
+						<label for="number">Celular</label>
+						<input id="number" type="tel" name="number" placeholder="(00) 0-0000-0000" required>
+					</div>
+
+				</div>
+
+				<div class="continue-button">
+					<button><a href="#">Continuar</a> </button>
+				</div>
+
+				<div>
+					<img src="./images/Contato.svg" alt="pessoas segurando um aviao, prancheta e malas" />
+				</div>
+			</form>
 		</div>
-		<!-- Email address input-->
-		<div class="form-floating mb-3">
-			<input class="form-control" id="email" type="email" placeholder="seuemail@example.com.br"
-				data-sb-validations="required,email" data-sb-can-submit="yes">
-			<div class="invalid-feedback d-none" data-sb-feedback="email:required"></div>
-			<div class="invalid-feedback d-none" data-sb-feedback="email:email"></div>
-		</div>
-		<!-- Phone number input-->
-		<div class="form-floating mb-3">
-			<input class="form-control" id="phone" type="tel" placeholder="(12) 90000-0000"
-				data-sb-validations="required" data-sb-can-submit="yes">
-			<div class="invalid-feedback d-none" data-sb-feedback="phone:required"> </div>
-		</div>
-		<!-- Message input-->
-		<div class="form-floating mb-3">
-			<textarea class="form-control" id="message" type="text" placeholder="Sua mensagem..." style="height: 10rem"
-				data-sb-validations="required" data-sb-can-submit="no"></textarea>
-		</div>
-
-		<!-- Submit Button-->
-		<button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-	</form>
+	</div>
 
 
+	<section class="flex-container socialmedia" id="social">
+
+		<ul class="social">
+			<div>
+				<li class="medias">
+					<img src="images/facebook.png" alt="Ícone Facebook">
+					<a href="https://www.facebook.com" target="_blank"></a>
+				</li>
+			</div>
+
+			<div>
+				<li class="medias">
+					<img src="images/instagram1.png" alt="Ícone Instagram">
+					<a href="https://www.instagram.com/" target="_blank"></a>
+				</li>
+			</div>
+
+			<div>
+				<li class="medias">
+					<img src="images/Twitter.png" alt="Ícone Twetter">
+					<a href="https://twitter.com" target="_blank"></a>
+				</li>
+			</div>
+
+			<div>
+				<li class="medias">
+					<img src="images/youtube.png" alt="Ícone Youtube">
+					<a href="https://youtube.com" target="_blank"></a>
+				</li>
+			</div>
+
+			<div>
+				<li class="medias">
+					<img src="images/linkedin.png" alt="Ícone Linkedin">
+					<a href="https://linkedin.com" target="_blank"></a>
+				</li>
+			</div>
+		</ul>
+
+	</section>
+
+	<div class="flex-container footer" id="footer">
+		<footer>
+			<div class="contact">
+				<p>Informações de Contato</p>
+				<p>Tel: (11)9-1234-4321</p>
+				<p>email: contato@frturismos.com.br</p>
+				<p>Rua da Universidade, 823 - São Paulo - SP - Brasil</p>
+				<br>
+			</div>
+
+			<div class="copyright">
+				<p>&copy; 2023</p>
+				<p>Desenvolvido por: Eduardo Luis Ferreira Reis</p>
+				<p>Disciplina Web Standards - PTI - Landing Page para Autônomo</p>
+				<p>Centro Universitário SENAC</p>
+				<p>Curso:Tecnologia em Análise e Desenvolvimento de Sistemas - EAD</p>
+			</div>
+		</footer>
+	</div>
 
 
-
-
-
-	<footer>
-		
-		<p>&copy; 2023</p>
-		<p>Desenvolvido por: Eduardo Luis Ferreira Reis</p>
-		<p>Disciplina Web Standards - PTI - Landing Page para Autônomo</p>
-	</footer>
 </body>
 
 </html>
