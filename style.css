@@ -304,12 +304,14 @@ header .menu {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0;
+    /* width:300px; */
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
+    /* width: 200px; */
 }
 
 .input-box input {
@@ -320,6 +322,7 @@ header .menu {
     box-shadow: 1px 1px 6px #0000001c;
     font-size: 0.8rem;
     background-color: rgba(103, 130, 133, 0.393);
+    text-transform: lowercase;
 }
 
 .input-box input:hover {
@@ -413,18 +416,62 @@ footer{
 
 
 
-/* mobile */
-@media(max-width: 767px) {
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .flex-container {
+        max-width: 768px;
+    }
+
+    .list-items {
+        max-width: 480px;
+    }
+
+    #home {
+        height: auto;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    #quem-somos img {
+        max-width: 100%;
+    }
+
+    .list-servicos .item-servico img {
+        width: 70%;
+        margin: auto;
+    }
+
+    #planos .item-plano {
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
     .flex-container {
         flex-direction: column;
     }
 
-    .home {
-        flex-direction: row;
-        height: auto;
-        width: 100%;
+    .list-items {
+        max-width: 100%;
+        justify-content: center;
     }
-    
+
+    header .list-items {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .menu {
+        margin-top: 10px;
+    }
+
+    #home {
+        height: auto;
+    }
+
     .home .texto-home {
         width: 100%;
     }
@@ -434,7 +481,7 @@ footer{
     }
 
     #quem-somos img {
-        min-width: 320px;
+        min-width: 100%;
         margin: auto;
     }
 
@@ -443,7 +490,7 @@ footer{
     }
 
     .item-servico img {
-        width: 50%;
+        width: 100%;
         margin: auto;
     }
 
@@ -454,7 +501,7 @@ footer{
     }
 
     .list-planos .item-plano {
-        max-width: 90%;
+        max-width: 100%;
         margin: auto;
         width: 100%;
         margin-bottom: 20px;
@@ -462,6 +509,13 @@ footer{
 
     #saiba-mais {
         max-width: 100%;
-        /* width: 100%; */
+    }
+
+    #saiba-mais .texto-saibamais {
+        width: 100%;
+    }
+
+    #saiba-mais img {
+        max-width: 100%;
     }
 }
