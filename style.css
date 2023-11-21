@@ -112,7 +112,7 @@ header .menu {
     margin-bottom: 10px;
 }
 
-.btn:hover{
+.btn:hover {
     transition: 0.3s;
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
@@ -186,7 +186,7 @@ header .menu {
     text-decoration: none;
 }
 
-.list-servicos .item-servico a:hover{
+.list-servicos .item-servico a:hover {
     background-color: #05ddfa;
 }
 
@@ -292,6 +292,7 @@ header .menu {
     display: flex;
     background-color: #eff1f6;
     padding: 3rem;
+    border-radius: 10px;
 }
 
 
@@ -370,7 +371,7 @@ header .menu {
     height: 350px;
 }
 
-#contato h2{
+#contato h2 {
     font-size: 2rem;
     color: #122A57;
 }
@@ -412,7 +413,7 @@ header .menu {
     background-color: rgba(229, 247, 247, 0.459)
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: row-reverse;
     gap: 100px;
@@ -457,59 +458,74 @@ footer{
 /* Mobile */
 @media (max-width: 767px) {
     .flex-container {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .list-items {
         max-width: 100%;
         justify-content: center;
+        flex-direction: row;
     }
 
-    header .list-items {
-        flex-direction: column;
+    #menu .list-items {
+        flex-direction: row;
         text-align: center;
+        justify-content: end;
     }
 
     header .menu {
-        margin-top: 10px;
+        color: #122A57;
+        flex-direction: row;
+        margin-top: 50px;
+        font-size: small;
     }
 
     #home {
         height: auto;
     }
 
+    #home .banner {
+        width: auto;
+    }
+
     .home .texto-home {
-        width: 100%;
+        width: 20%;
     }
 
     #quem-somos {
-        flex-direction: column-reverse;
+        flex-direction: row;
     }
 
     #quem-somos img {
         min-width: 100%;
+        max-height: 10px;
         margin: auto;
     }
 
+    #servicos {
+        height: 50%;
+        width: 100%;
+    }
+
     .list-servicos {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .item-servico img {
-        width: 100%;
+        width: 80%;
         margin: auto;
     }
 
     .list-planos {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .list-planos .item-plano {
         max-width: 100%;
         margin: auto;
-        width: 100%;
+        width: 50%;
         margin-bottom: 20px;
     }
 
@@ -519,10 +535,7 @@ footer{
 
     #saiba-mais .texto-saibamais {
         width: 100%;
+        height: auto;
     }
 
-    #saiba-mais img {
-        max-width: 100%;
-    }
 }
-
