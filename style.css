@@ -14,6 +14,7 @@ div img {
     width: 100%;
 }
 
+
 .flex-container {
     display: flex;
     max-width: 992px;
@@ -245,8 +246,10 @@ header .menu {
 .list-planos {
     display: flex;
     align-items: flex-end;
+
     justify-content: space-between;
     padding-top: 50px;
+
 }
 
 .item-plano {
@@ -291,11 +294,13 @@ header .menu {
     padding: 3rem;
 }
 
+
 .form-header {
     margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
 }
+
 
 .input-group {
     display: flex;
@@ -448,6 +453,7 @@ footer{
     }
 }
 
+
 /* Mobile */
 @media (max-width: 767px) {
     .flex-container {
@@ -519,3 +525,4 @@ footer{
         max-width: 100%;
     }
 }
+
