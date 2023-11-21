@@ -20,14 +20,12 @@ div img {
     margin: auto;
     width: 100%;
     min-width: 320px;
-    /* border: solid 2px red; */
 }
 
 .text-menu h1 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    font-family: 'Kay Pho Du', serif;
     font-weight: 700;
     font-size: 2em;
 }
@@ -55,32 +53,31 @@ header .list-items {
     align-items: center;
 }
 
-
-
 header .menu {
     justify-content: space-around;
 }
 
-.list-items li{
-    list-style-type:none;
+.list-items li {
+    list-style-type: none;
 }
 
 .list-items li a {
     color: #fff;
+    font-weight: 700;
 }
 
-.list-items li:hover{    
+.list-items li:hover {
     transition: 0.3s;
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
     transform: scale(1.3);
 }
 
-.list-items li a:hover{
-    color: #6dff04;
+.list-items li a:hover {
+    color: #04d5ff;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
-    font-size: 0,9em;
+    font-size: 0, 9em;
 }
 
 #home {
@@ -91,12 +88,11 @@ header .menu {
 
 .home .texto-home {
     min-height: 200px;
-
 }
 
-.texto-home h1 {
+.texto-home h2 {
+    font-size: 2rem;
     color: #122A57;
-    font-size: 48px;
     margin-bottom: 10px;
 }
 
@@ -115,6 +111,13 @@ header .menu {
     margin-bottom: 10px;
 }
 
+.btn:hover{
+    transition: 0.3s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
 #quem-somos {
     display: flex;
     height: 100vh;
@@ -130,7 +133,6 @@ header .menu {
     margin-bottom: 0.625rem;
 }
 
-
 #quem-somos p {
     margin-bottom: 0.500rem;
     width: 100%;
@@ -140,14 +142,13 @@ header .menu {
     max-width: 80rem;
 }
 
-/* ##################### */
-
 .container-externo {
     background-color: #122A57;
     width: 100%;
 }
 
 #servicos {
+    height: 100vh;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 100px;
@@ -155,13 +156,14 @@ header .menu {
 
 #servicos h2 {
     color: #fff;
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .list-servicos {
     display: flex;
     justify-content: space-between;
+    padding-top: 80px;
 }
 
 .list-servicos .item-servico {
@@ -170,17 +172,21 @@ header .menu {
 
 .item-servico a {
     width: 220px;
+    height: 50px;
     background-color: #fff;
     border-radius: 30px;
-    height: 50px;
-    text-align: center;
     margin-top: 20px;
-    line-height: 50px;
     padding: 5px 10px;
-    color: #122A57;
+    line-height: 50px;
+    text-align: center;
     font-size: 12px;
-    text-decoration: none;
     font-weight: 700;
+    color: #122A57;
+    text-decoration: none;
+}
+
+.list-servicos .item-servico a:hover{
+    background-color: #05ddfa;
 }
 
 
@@ -196,19 +202,18 @@ header .menu {
     margin: auto;
 }
 
-/* ##################### */
 #saiba-mais {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row;
     height: 100vh;
     align-items: center;
-    color: #04ab9d;
-    /* border: dotted 2px yellow; */
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 #saiba-mais .titulo {
-    color: rgb(0, 183, 255);
+    font-size: 2rem;
+    color: #122A57;
 }
 
 
@@ -233,13 +238,15 @@ header .menu {
 }
 
 #planos h2 {
-    font-size: 32px;
+    font-size: 2rem;
+    color: #122A57;
 }
 
 .list-planos {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    padding-top: 50px;
 }
 
 .item-plano {
@@ -263,7 +270,6 @@ header .menu {
     margin-top: 20px;
 }
 
-
 .item-plano ul {
     padding: 10px 20px;
     display: flex;
@@ -277,23 +283,11 @@ header .menu {
     align-items: center;
 }
 
-
-.form-image {
-    max-width: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-}
-
-
 .form {
-    width: 50%;
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(140, 206, 247)71, 171;
-    background-color: #c3c4c7;
+    background-color: #eff1f6;
     padding: 3rem;
 }
 
@@ -303,9 +297,10 @@ header .menu {
     justify-content: space-between;
 }
 
-
 .input-group {
     display: flex;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0;
@@ -335,13 +330,9 @@ header .menu {
     outline: 1px solid #e60505;
 }
 
-
-
 .input-box input::placeholder {
     color: #000000be;
 }
-
-
 
 .continue-button button {
     width: 100%;
@@ -364,11 +355,23 @@ header .menu {
     color: #030000d2;
 }
 
+#contato img {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+}
+
+#contato h2{
+    font-size: 2rem;
+    color: #122A57;
+}
+
 #social {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #e8e7e7;
 }
 
 #social ul {
@@ -382,10 +385,9 @@ header .menu {
 }
 
 #social .medias {
-    /* border: solid 2px greenyellow; */
     width: 32px;
     height: 32px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 #social ul.social li:hover {
@@ -395,31 +397,34 @@ header .menu {
     transform: scale(1.3);
 }
 
-#footer{
-/* border: solid 2px greenyellow; */
-font-family: 'Kay Pho Du';
-font-weight: 500;
-font-size: 1em;
-background-color:#c5cece75 ;
+#footer {
+    font-family: 'Kay Pho Du';
+    font-weight: 500;
+    font-size: .8em;
+    background-color: rgba(229, 247, 247, 0.459)
 }
 
-#contato img{
+footer{
     display: flex;
-justify-content: flex-end;    width: 250px;
-    height: 250px;
+    flex-direction: row-reverse;
+    gap: 100px;
+    justify-content: space-between;
 }
+
 
 
 /* mobile */
-@media(max-width: 992px) {
+@media(max-width: 767px) {
     .flex-container {
         flex-direction: column;
     }
 
     .home {
-        flex-direction: column-reverse;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
     }
-
+    
     .home .texto-home {
         width: 100%;
     }
