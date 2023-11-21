@@ -49,19 +49,38 @@ header {
 
 header .list-items {
     display: flex;
-    max-width: 260px;
+    max-width: 560px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-
 }
+
+
 
 header .menu {
     justify-content: space-around;
 }
 
+.list-items li{
+    list-style-type:none;
+}
+
 .list-items li a {
     color: #fff;
+}
+
+.list-items li:hover{    
+    transition: 0.3s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.list-items li a:hover{
+    color: #6dff04;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 0,9em;
 }
 
 #home {
@@ -111,14 +130,6 @@ header .menu {
     margin-bottom: 0.625rem;
 }
 
-#quem-somos h2::before {
-    content: "";
-    height: 50px;
-    width: 2px;
-    margin-right: 5px;
-    background-color: #04ab9d;
-    position: relative;
-}
 
 #quem-somos p {
     margin-bottom: 0.500rem;
@@ -252,14 +263,6 @@ header .menu {
     margin-top: 20px;
 }
 
-.item-plano h3::after {
-    content: "";
-    background-color: #122A57;
-    width: 100%;
-    height: 3px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
 
 .item-plano ul {
     padding: 10px 20px;
@@ -274,13 +277,6 @@ header .menu {
     align-items: center;
 }
 
-.item-plano ul li::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: #122A57;
-    margin-right: 5px;
-}
 
 .form-image {
     max-width: 50%;
@@ -307,17 +303,6 @@ header .menu {
     justify-content: space-between;
 }
 
-
-.form-header h1::after {
-    content: '';
-    display: block;
-    width: 13.3rem;
-    height: 0.1rem;
-    background-color: #05648d;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
-}
 
 .input-group {
     display: flex;
@@ -410,6 +395,19 @@ header .menu {
     transform: scale(1.3);
 }
 
+#footer{
+/* border: solid 2px greenyellow; */
+font-family: 'Kay Pho Du';
+font-weight: 500;
+font-size: 1em;
+background-color:#c5cece75 ;
+}
+
+#contato img{
+    display: flex;
+justify-content: flex-end;    width: 250px;
+    height: 250px;
+}
 
 
 /* mobile */
